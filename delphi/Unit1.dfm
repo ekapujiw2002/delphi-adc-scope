@@ -1,0 +1,289 @@
+object Form1: TForm1
+  Left = 519
+  Top = 252
+  Width = 536
+  Height = 358
+  Caption = 'ADC PC SCOPE'
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  Font.Style = []
+  OldCreateOrder = False
+  Position = poScreenCenter
+  OnCreate = FormCreate
+  DesignSize = (
+    520
+    320)
+  PixelsPerInch = 96
+  TextHeight = 13
+  object lblData: TLabel
+    Left = 8
+    Top = 8
+    Width = 50
+    Height = 13
+    Caption = 'DATA = ...'
+  end
+  object slscpMain: TSLScope
+    Left = 8
+    Top = 32
+    Width = 505
+    Height = 281
+    Cursor = crDefault
+    Anchors = [akLeft, akTop, akRight, akBottom]
+    TabOrder = 0
+    InputPins.Form = Form1
+    XInputPins.Form = Form1
+    YAxis.Align = vaLeft
+    YAxis.MinorTicks.Count = 0
+    YAxis.MajorTicks.Step = 10.000000000000000000
+    YAxis.MajorTicks.StartFrom._Floats = (
+      (
+        StartFrom
+        0.000000000000000000))
+    YAxis.Format.PrecisionMode = dpmGeneral
+    YAxis.Format.Precision = 3
+    YAxis.Font.Charset = DEFAULT_CHARSET
+    YAxis.Font.Color = clWhite
+    YAxis.Font.Height = -11
+    YAxis.Font.Name = 'Arial'
+    YAxis.Font.Style = []
+    YAxis.Min.Value = -1000.000000000000000000
+    YAxis.Min.DataValue = -1000.000000000000000000
+    YAxis.Min.Range.High.Value = 1000.000000000000000000
+    YAxis.Min.Range.High.Enabled = False
+    YAxis.Min.Range.Low.Value = -1000.000000000000000000
+    YAxis.Min.Range.Low.Enabled = False
+    YAxis.Min.Tick._Floats = (
+      (
+        Value
+        0.000000000000000000))
+    YAxis.Max.Value = 1000.000000000000000000
+    YAxis.Max.DataValue = 1000.000000000000000000
+    YAxis.Max.Range.High.Value = 1000.000000000000000000
+    YAxis.Max.Range.High.Enabled = False
+    YAxis.Max.Range.Low.Value = -1000.000000000000000000
+    YAxis.Max.Range.Low.Enabled = False
+    YAxis.Max.Tick._Floats = (
+      (
+        Value
+        0.000000000000000000))
+    YAxis.Max.Mode = mamValue
+    YAxis.Zooming.Range.High.Value = 100000000.000000000000000000
+    YAxis.Zooming.Range.High.Enabled = False
+    YAxis.Zooming.Range.Low.Value = 0.000000100000000000
+    YAxis.Zooming.Range.Low.Enabled = True
+    YAxis.AxisLabel.Font.Charset = DEFAULT_CHARSET
+    YAxis.AxisLabel.Font.Color = clWhite
+    YAxis.AxisLabel.Font.Height = -13
+    YAxis.AxisLabel.Font.Name = 'Arial'
+    YAxis.AxisLabel.Font.Style = [fsBold]
+    YAxis.AxisLabel.Text = 'Y Axis'
+    YAxis.DataView.Lines.Pen.Color = clGreen
+    YAxis.DataView.ZeroLine.Pen.Color = clWhite
+    YAxis.AdditionalAxes = <>
+    XAxis.Align = vaBottom
+    XAxis.MinorTicks.Count = 0
+    XAxis.MajorTicks.Step = 10.000000000000000000
+    XAxis.MajorTicks.StartFrom._Floats = (
+      (
+        StartFrom
+        0.000000000000000000))
+    XAxis.Format.PrecisionMode = dpmGeneral
+    XAxis.Format.Precision = 3
+    XAxis.Font.Charset = DEFAULT_CHARSET
+    XAxis.Font.Color = clWhite
+    XAxis.Font.Height = -11
+    XAxis.Font.Name = 'Arial'
+    XAxis.Font.Style = []
+    XAxis.Min.Range.High.Value = 1000.000000000000000000
+    XAxis.Min.Range.High.Enabled = False
+    XAxis.Min.Range.Low.Value = -1000.000000000000000000
+    XAxis.Min.Range.Low.Enabled = False
+    XAxis.Min.Tick._Floats = (
+      (
+        Value
+        0.000000000000000000))
+    XAxis.Min._Floats = (
+      (
+        DataValue
+        0.000000000000000000)
+      (
+        Value
+        0.000000000000000000))
+    XAxis.Max.Value = 1024.000000000000000000
+    XAxis.Max.DataValue = 1024.000000000000000000
+    XAxis.Max.Range.High.Value = 1000.000000000000000000
+    XAxis.Max.Range.High.Enabled = False
+    XAxis.Max.Range.Low.Value = -1000.000000000000000000
+    XAxis.Max.Range.Low.Enabled = False
+    XAxis.Max.Tick.Value = 1024.000000000000000000
+    XAxis.Max.Mode = mamValue
+    XAxis.Zooming.Range.High.Value = 100000000.000000000000000000
+    XAxis.Zooming.Range.High.Enabled = False
+    XAxis.Zooming.Range.Low.Value = 0.000000100000000000
+    XAxis.Zooming.Range.Low.Enabled = True
+    XAxis.AxisLabel.Font.Charset = DEFAULT_CHARSET
+    XAxis.AxisLabel.Font.Color = clWhite
+    XAxis.AxisLabel.Font.Height = -13
+    XAxis.AxisLabel.Font.Name = 'Arial'
+    XAxis.AxisLabel.Font.Style = [fsBold]
+    XAxis.UnitScale.Exponent = 0
+    XAxis.DataView.Lines.Pen.Color = clGreen
+    XAxis.DataView.ZeroLine.Pen.Color = clWhite
+    XAxis.AdditionalAxes = <>
+    Legend.Align = vaRight
+    Legend.Font.Charset = DEFAULT_CHARSET
+    Legend.Font.Color = clWhite
+    Legend.Font.Height = -11
+    Legend.Font.Name = 'Arial'
+    Legend.Font.Style = []
+    Legend.Channels.Caption.Font.Charset = DEFAULT_CHARSET
+    Legend.Channels.Caption.Font.Color = clWhite
+    Legend.Channels.Caption.Font.Height = -13
+    Legend.Channels.Caption.Font.Name = 'Arial'
+    Legend.Channels.Caption.Font.Style = []
+    Legend.ChannelLinks.Caption.Font.Charset = DEFAULT_CHARSET
+    Legend.ChannelLinks.Caption.Font.Color = clWhite
+    Legend.ChannelLinks.Caption.Font.Height = -13
+    Legend.ChannelLinks.Caption.Font.Name = 'Arial'
+    Legend.ChannelLinks.Caption.Font.Style = []
+    Legend.MarkerGroups.Caption.Font.Charset = DEFAULT_CHARSET
+    Legend.MarkerGroups.Caption.Font.Color = clWhite
+    Legend.MarkerGroups.Caption.Font.Height = -13
+    Legend.MarkerGroups.Caption.Font.Name = 'Arial'
+    Legend.MarkerGroups.Caption.Font.Style = []
+    Legend.Zones.Caption.Font.Charset = DEFAULT_CHARSET
+    Legend.Zones.Caption.Font.Color = clWhite
+    Legend.Zones.Caption.Font.Height = -13
+    Legend.Zones.Caption.Font.Name = 'Arial'
+    Legend.Zones.Caption.Font.Style = []
+    Legend.Ellipses.Caption.Font.Charset = DEFAULT_CHARSET
+    Legend.Ellipses.Caption.Font.Color = clWhite
+    Legend.Ellipses.Caption.Font.Height = -13
+    Legend.Ellipses.Caption.Font.Name = 'Arial'
+    Legend.Ellipses.Caption.Font.Style = []
+    Legend.Cursors.Caption.Font.Charset = DEFAULT_CHARSET
+    Legend.Cursors.Caption.Font.Color = clWhite
+    Legend.Cursors.Caption.Font.Height = -13
+    Legend.Cursors.Caption.Font.Name = 'Arial'
+    Legend.Cursors.Caption.Font.Style = []
+    Legend.CursorLinks.Caption.Font.Charset = DEFAULT_CHARSET
+    Legend.CursorLinks.Caption.Font.Color = clWhite
+    Legend.CursorLinks.Caption.Font.Height = -13
+    Legend.CursorLinks.Caption.Font.Name = 'Arial'
+    Legend.CursorLinks.Caption.Font.Style = []
+    Legend.Labels.Caption.Font.Charset = DEFAULT_CHARSET
+    Legend.Labels.Caption.Font.Color = clWhite
+    Legend.Labels.Caption.Font.Height = -13
+    Legend.Labels.Caption.Font.Name = 'Arial'
+    Legend.Labels.Caption.Font.Style = []
+    Legend.CustomGroups = <>
+    Title.Align = vaTop
+    Title.Text = 'ADC SCOPE'
+    Title.Font.Charset = DEFAULT_CHARSET
+    Title.Font.Color = clWhite
+    Title.Font.Height = -21
+    Title.Font.Name = 'Arial'
+    Title.Font.Style = [fsBold]
+    DataView.Border.Pen.Color = clGreen
+    Trails.Font.Charset = DEFAULT_CHARSET
+    Trails.Font.Color = clWhite
+    Trails.Font.Height = -11
+    Trails.Font.Name = 'Arial'
+    Trails.Font.Style = []
+    Highlighting.MouseHitPoint.PointLabel.Font.Charset = DEFAULT_CHARSET
+    Highlighting.MouseHitPoint.PointLabel.Font.Color = clWhite
+    Highlighting.MouseHitPoint.PointLabel.Font.Height = -11
+    Highlighting.MouseHitPoint.PointLabel.Font.Name = 'Arial'
+    Highlighting.MouseHitPoint.PointLabel.Font.Style = []
+    MarkerGroups = <>
+    Channels = <
+      item
+        Name = 'Channel0'
+        Tag = 0
+        Color = clRed
+        Points.Visible = False
+        Points.Shape = psCircle
+        Points.Brush.Color = clRed
+        Points.Brush.Style = bsSolid
+        Points.Pen.Color = clRed
+        ChannelMode = cmLine
+        MouseCursor = crDefault
+        ShadeMode = csmZero
+        Markers = <>
+        AxisIndex_ = (
+          0
+          0)
+      end
+      item
+        Name = 'Channel1'
+        Tag = 0
+        Color = clLime
+        Points.Visible = False
+        Points.Shape = psCircle
+        Points.Brush.Color = clRed
+        Points.Brush.Style = bsSolid
+        Points.Pen.Color = clRed
+        ChannelMode = cmLine
+        MouseCursor = crDefault
+        ShadeMode = csmZero
+        Markers = <>
+        AxisIndex_ = (
+          0
+          0)
+      end
+      item
+        Name = 'Channel2'
+        Tag = 0
+        Color = clBlue
+        Points.Visible = False
+        Points.Shape = psCircle
+        Points.Brush.Color = clRed
+        Points.Brush.Style = bsSolid
+        Points.Pen.Color = clRed
+        ChannelMode = cmLine
+        MouseCursor = crDefault
+        ShadeMode = csmZero
+        Markers = <>
+        AxisIndex_ = (
+          0
+          0)
+      end>
+    Zones = <>
+    Ellipses = <>
+    Cursors = <>
+    CursorLinks = <>
+    ChannelLinks = <>
+    SizeLimit = 1000
+    Labels = <>
+  end
+  object comportMain: TComPort
+    BaudRate = br57600
+    Port = 'COM5'
+    Parity.Bits = prNone
+    StopBits = sbOneStopBit
+    DataBits = dbEight
+    Events = [evRxChar, evTxEmpty, evRxFlag, evRing, evBreak, evCTS, evDSR, evError, evRLSD, evRx80Full]
+    FlowControl.OutCTSFlow = False
+    FlowControl.OutDSRFlow = False
+    FlowControl.ControlDTR = dtrDisable
+    FlowControl.ControlRTS = rtsDisable
+    FlowControl.XonXoffOut = False
+    FlowControl.XonXoffIn = False
+    Left = 246
+    Top = 146
+  end
+  object cmdtpcktMain: TComDataPacket
+    ComPort = comportMain
+    OnPacket = cmdtpcktMainPacket
+    Left = 214
+    Top = 146
+  end
+  object tmr1: TTimer
+    OnTimer = tmr1Timer
+    Left = 278
+    Top = 146
+  end
+end
